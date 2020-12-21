@@ -305,6 +305,26 @@ img {
 }
 /* ------------офрмление форм------------------- */
 
+/* .icon-name {
+  display: flex;
+} */
+
+.modal-form {
+  outline: 1px solid teal;
+}
+
+/* .rrrr {
+  margin: 78px 40px;
+} */
+
+.form-input {
+  margin: 0;
+  /* padding: 10px 20px; */
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
 /*-------кнопка крестик---------------*/
 .close {
   position: absolute;
