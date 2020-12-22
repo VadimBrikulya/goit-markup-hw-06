@@ -366,13 +366,19 @@ img {
   padding: 12px 16px;
   margin-top: 4px;
   resize: none;
+  transition: border-color 250ms linear;
+  cursor: pointer;
 }
 .modal-form-messege::placeholder {
   font-size: 14px;
   line-height: 0.875;
   letter-spacing: 0.01em;
-
   color: rgba(117, 117, 117, 0.5);
+}
+.modal-form-messege:focus,
+.modal-form-messege:hover {
+  outline: none;
+  border-color: var(--accent-color);
 }
 /*-------кнопка крестик---------------*/
 .close {
