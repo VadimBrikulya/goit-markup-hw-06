@@ -306,13 +306,13 @@ img {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
   border-radius: 4px;
   padding-left: 42px;
   margin-top: 4px;
   cursor: pointer;
   transition: border-color 250ms linear;
 }
+
 .form-input:focus,
 .form-input:hover {
   outline: none;
@@ -340,10 +340,30 @@ img {
   transform: translateY(-50%);
   transition: fill 250ms linear;
 }
-
-.bbb {
+/* 
+.comment-box {
   display: flex;
   flex-direction: column;
+} */
+
+.text-agree {
+  font-family: var(--main-font);
+  color: var(--accent-color);
+}
+.modal-form-field {
+  font-family: var(--main-font);
+  color: #757575;
+  font-size: 12px;
+  line-height: 0.857;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.modal-form-messege {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
 }
 /*-------кнопка крестик---------------*/
 .close {
@@ -369,9 +389,6 @@ img {
 .box-button {
   display: flex;
 }
-*/
-
-
 
 /*---------------block III-------------------*/
 
