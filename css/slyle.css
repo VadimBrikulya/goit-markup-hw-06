@@ -166,10 +166,6 @@ img {
   transition: 300ms;
 }
 
-/* .navigation-list-link:hover::after {
-  opacity: 1;
-} */
-
 /* ------------ flex номер + имеил ------------------*/
 
 .container-address {
@@ -314,6 +310,17 @@ img {
   border-radius: 4px;
   padding-left: 42px;
   margin-top: 4px;
+  cursor: pointer;
+}
+.form-input:focus,
+.form-input:hover {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.form-input:focus,
+.form-input:hover + .icon-input {
+  fill: var(--accent-color);
 }
 .container-form-input {
   position: relative;
@@ -342,8 +349,10 @@ img {
   outline: none;
 }
 
-.close:hover {
+.close:hover,
+.close:focus {
   color: var(--accent-color);
+  fill: currentColor;
 }
 
 .box-button {
@@ -460,7 +469,6 @@ img {
 
 .name {
   display: flex;
-  /* border: 1px solid teal; */
   justify-content: center;
 }
 
