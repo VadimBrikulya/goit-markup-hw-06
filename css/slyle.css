@@ -216,7 +216,6 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
 
-  text-align: center;
   background-image: linear-gradient(
       var(--gradient-color),
       var(--gradient-color)
@@ -299,10 +298,18 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
-  text-align: left;
+  /* text-align: left; */
 }
 /* ------------офoрмление форм------------------- */
-
+.form-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+  color: var(--secondary-color);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.172;
+}
 .form-input {
   width: 100%;
   height: 40px;
@@ -352,7 +359,7 @@ img {
   font-family: var(--main-font);
   color: #757575;
   font-size: 12px;
-  line-height: 0.857;
+  line-height: 1.166;
   letter-spacing: 0.01em;
   color: #757575;
 }
@@ -369,7 +376,7 @@ img {
 }
 .modal-form-messege::placeholder {
   font-size: 14px;
-  line-height: 0.875;
+  line-height: 1.142;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
@@ -383,8 +390,7 @@ img {
 .modal-form-policy:checked + .modal-form-policy-text::before {
   background-color: var(--accent-color);
   background-image: url('../icon/icon_check.svg');
-  outline: 1px solid #fff;
-  border-radius: 2px;
+  border: none;
 }
 
 .modal-form-policy-text::before {
@@ -393,12 +399,15 @@ img {
 
   width: 16px;
   height: 15px;
-  outline: 1px solid #212121;
   margin-right: 7px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 2px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .modal-form-policy-text {
   font-size: 14px;
-  line-height: 0.583;
+  line-height: 1.714;
   letter-spacing: 0.03em;
   display: flex;
   align-items: center;
