@@ -799,6 +799,7 @@ img {
 
 .footer-social-list {
   display: flex;
+  justify-content: center;
 }
 
 .footer-social-item:not(:last-child) {
@@ -818,10 +819,10 @@ img {
 }
 
 .footer-social {
-  padding-left: 70px;
+  display: block;
+  margin-left: 70px;
 }
 .footer-social-box {
-  display: block;
   margin-bottom: 20px;
   color: #fff;
   font-size: 14px;
@@ -845,7 +846,7 @@ img {
   margin-right: 12px;
 }
 .footer-form {
-  padding-left: 154px;
+  margin-left: 93px;
 }
 .footer-form-label {
   display: block;
