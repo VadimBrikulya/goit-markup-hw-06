@@ -15,6 +15,7 @@ html {
   --second-bg-color: #f5f4fa;
   --gradient-color: rgba(47, 48, 58, 0.4);
   --logo-client: #afb1b8;
+  --timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
   font-family: var(--main-font);
@@ -291,14 +292,20 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 581px;
-  min-width: 528px;
+  width: 528px;
+  min-height: 581px;
+  padding-top: 40px;
+  padding-right: 45px;
+  padding-bottom: 40px;
+  padding-left: 35px;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 40px;
-  /* text-align: left; */
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing);
+  transition-delay: 150ms;
 }
 /* ------------офoрмление форм------------------- */
 .form-title {
@@ -396,7 +403,6 @@ img {
 .modal-form-policy-text::before {
   content: '';
   display: inline-block;
-
   width: 16px;
   height: 15px;
   margin-right: 7px;
@@ -411,11 +417,17 @@ img {
   letter-spacing: 0.03em;
   display: flex;
   align-items: center;
+  justify-content: center;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.container-checkbox {
+  margin-top: 20px;
 }
 .modal-form-btn {
   display: inline-block;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .visually-hidden {
@@ -427,6 +439,34 @@ img {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
+}
+
+/* -------------синяя кнопка в модалке---------------- */
+.button-submit {
+  display: block;
+  min-width: 200px;
+  height: 50px;
+  padding: 10px 55px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  /* transition-property: background-color, box-shadow; */
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing);
+  border: none;
+  border-radius: 4px;
+}
+
+.button-submit:hover,
+.button-submit:focus {
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /*-------кнопка крестик---------------*/
