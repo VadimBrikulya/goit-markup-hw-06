@@ -846,7 +846,7 @@ img {
   margin-right: 12px;
 }
 .footer-form {
-  margin-left: 93px;
+  margin-left: auto;
 }
 .footer-form-label {
   display: block;
